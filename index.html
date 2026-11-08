@@ -91,7 +91,7 @@
 
                 <div id="customerAuthArea">
                     <button onclick="openCustomerLoginModal()" class="bg-white/80 hover:bg-white text-gray-800 px-4 py-2 rounded-2xl text-sm font-medium transition shadow-sm border border-white/60">
-                        <i class="fa-brands fa-google mr-1.5 text-red-500"></i> কাস্টমার লগইন
+                        <i class="fa-brands fa-google mr-1.5 text-red-500"></i> customer loging
                     </button>
                 </div>
                 <div id="customerProfileArea" class="hidden flex items-center space-x-2">
@@ -99,7 +99,7 @@
                     <button onclick="logoutCustomer()" class="text-red-500 hover:text-red-700 text-sm font-medium px-2 py-1"><i class="fa-solid fa-right-from-bracket"></i></button>
                 </div>
                 <button onclick="openOwnerLoginModal()" class="ios-btn-glass hover:bg-emerald-600 text-white px-4 py-2 rounded-2xl text-sm font-medium transition shadow-md">
-                    <i class="fa-solid fa-user-shield mr-1"></i> ওনার প্যানেল
+                    <i class="fa-solid fa-user-shield mr-1"></i> owner
                 </button>
             </div>
         </div>
@@ -110,7 +110,7 @@
         <div class="bg-gradient-to-r from-emerald-900/90 to-teal-900/90 rounded-3xl text-white py-16 px-6 text-center bg-cover bg-center relative overflow-hidden shadow-xl border border-white/20">
             <div class="absolute inset-0 bg-black/30 backdrop-blur-[2px]" id="heroOverlay"></div>
             <div class="max-w-3xl mx-auto relative z-10">
-                <h2 class="text-3xl md:text-4xl font-bold mb-3 tracking-tight" id="heroTitleText">SR STORE - প্রিমিয়াম কালেকশন</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-3 tracking-tight" id="heroTitleText">CHRACKBOX BD - welcome</h2>
                 <p class="text-emerald-100 text-sm md:text-base mb-6 font-light" id="heroDescText">বাংলাদেশের যেকোনো প্রান্তে দ্রুত ও নিরাপদে ক্যাশ অন ডেলিভারিতে হোম ডেলিভারি সেবা।</p>
                 <div class="md:hidden mb-4">
                     <input type="text" id="mobileSearchInput" name="sr_mobile_search_query" autocomplete="off" oninput="handleSearch()" placeholder="প্রোডাক্ট খুঁজুন..." class="w-full px-4 py-2.5 rounded-full text-gray-800 text-sm bg-white/80 backdrop-blur-md focus:outline-none">
@@ -154,8 +154,8 @@
     <!-- Main Content -->
     <main class="flex-grow max-w-7xl mx-auto px-4 py-4 w-full">
         <div class="flex justify-between items-center mb-6">
-            <h3 class="text-xl font-bold text-gray-800 border-l-4 border-emerald-600 pl-3">সকল প্রোডাক্ট</h3>
-            <span id="productCountBadge" class="text-sm text-gray-600 ios-glass px-4 py-1 rounded-full shadow-sm">মোট প্রোডাক্ট: ০</span>
+            <h3 class="text-xl font-bold text-gray-800 border-l-4 border-emerald-600 pl-3">All product </h3>
+            <span id="productCountBadge" class="text-sm text-gray-600 ios-glass px-4 py-1 rounded-full shadow-sm">Total item : ০</span>
         </div>
 
         <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
@@ -174,7 +174,7 @@
                     <div class="bg-emerald-600 text-white p-2 rounded-xl text-lg shadow-md">
                         <i class="fa-solid fa-store" id="footerLogoIcon"></i>
                     </div>
-                    <h4 class="text-white text-lg font-bold" id="footerBrandTitle">SR STORE</h4>
+                    <h4 class="text-white text-lg font-bold" id="footerBrandTitle"> CHRACKBOX BD </h4>
                 </div>
                 <p class="text-sm text-gray-400 font-light" id="footerDescText">আমরা দিচ্ছি ১০০% প্রিমিয়াম কোয়ালিটির নিজস্ব প্রোডাক্ট। বাংলাদেশে দ্রুত ও নিরাপদে হোম ডেলিভারি সার্ভিস।</p>
             </div>
@@ -196,7 +196,7 @@
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
-            <span id="footerCopyright">© ২০২৬ SR STORE. সর্বস্বত্ব সংরক্ষিত।</span>
+            <span id="footerCopyright">© ২০২৬ CHRACKBOX BD. সর্বস্বত্ব সংরক্ষিত।</span>
         </div>
     </footer>
 
@@ -265,7 +265,7 @@
                 </div>
             </div>
 
-            <h4 class="font-bold text-gray-800 text-base mb-3"><i class="fa-solid fa-clock-rotate-left mr-2 text-emerald-600"></i> আপনার অর্ডার হিস্ট্রি ও লাইভ ট্র্যাকিং</h4>
+            <h4 class="font-bold text-gray-800 text-base mb-3"><i class="fa-solid fa-clock-rotate-left mr-2 text-emerald-600"></i>Your order status</h4>
             <div id="customerOrderHistoryContainer" class="space-y-4"></div>
         </div>
     </div>
@@ -274,17 +274,17 @@
     <div id="cartDrawer" class="fixed inset-0 bg-black/60 backdrop-blur-md hidden z-50 flex justify-end">
         <div class="bg-white w-full max-w-md h-full flex flex-col shadow-2xl relative">
             <div class="p-4 bg-gray-900 text-white flex justify-between items-center">
-                <h3 class="font-bold text-lg"><i class="fa-solid fa-bag-shopping mr-2"></i> আপনার শপিং ব্যাগ (<span id="drawerCartCount">0</span>)</h3>
+                <h3 class="font-bold text-lg"><i class="fa-solid fa-bag-shopping mr-2"></i> cart (<span id="drawerCartCount">0</span>)</h3>
                 <button onclick="closeCartDrawer()" class="text-gray-400 hover:text-white text-xl"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div id="cartItemsContainer" class="flex-grow p-4 overflow-y-auto space-y-4 divide-y"></div>
             <div class="p-4 bg-gray-50 border-t space-y-3">
                 <div class="flex justify-between font-bold text-base text-gray-900">
-                    <span>মোট প্রাক্কলিত মূল্য:</span>
+                    <span>Total price:</span>
                     <span id="cartTotalPrice" class="text-emerald-600">৳ ০</span>
                 </div>
                 <button onclick="proceedToCheckoutFromCart()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 rounded-2xl font-bold transition shadow-md">
-                    অর্ডার কনফার্ম করুন (Checkout)
+                    Order confirm(Checkout)
                 </button>
             </div>
         </div>
@@ -299,11 +299,11 @@
                     <i class="fa-solid fa-shield-halved"></i>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900">নিরাপত্তা যাচাই</h3>
-                <p class="text-sm text-gray-500 mt-1">[x.database] অ্যাক্সেস পাসওয়ার্ড দিন</p>
+                <p class="text-sm text-gray-500 mt-1">[x.database] x.database security</p>
             </div>
             <div class="space-y-4">
                 <div>
-                    <label class="block text-xs font-semibold text-gray-600 mb-1">[x.database] পাসওয়ার্ড *</label>
+                    <label class="block text-xs font-semibold text-gray-600 mb-1">[x.database] security *</label>
                     <input type="password" id="step1PassInput" autocomplete="new-password" placeholder="[x.database] পাসওয়ার্ড দিন" class="w-full px-4 py-2.5 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-white/70 border border-gray-300">
                 </div>
                 <button onclick="handleOwnerStep1()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 rounded-2xl font-medium transition shadow-md">
@@ -321,8 +321,8 @@
                 <div class="bg-emerald-50 w-12 h-12 rounded-2xl flex items-center justify-center mx-auto mb-3 text-emerald-600 text-xl border border-emerald-200 shadow-sm">
                     <i class="fa-solid fa-user-shield"></i>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900">ওনার অ্যাডমিন লগইন</h3>
-                <p class="text-sm text-gray-500 mt-1">আইপি ও গোপন পাসওয়ার্ড দিয়ে ড্যাশবোর্ডে প্রবেশ করুন</p>
+                <h3 class="text-xl font-bold text-gray-900">Owner log </h3>
+                <p class="text-sm text-gray-500 mt-1">ip and pass </p>
             </div>
 
             <div class="space-y-4">
@@ -331,11 +331,11 @@
                     <input type="password" id="ownerIpInput" autocomplete="new-password" placeholder="আইপি অ্যাড্রেস দিন" class="w-full px-4 py-2.5 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-white/70 border border-gray-300">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-gray-600 mb-1">গোপন পাসওয়ার্ড *</label>
-                    <input type="password" id="ownerPassInput" autocomplete="new-password" placeholder="পাসওয়ার্ড দিন" class="w-full px-4 py-2.5 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-white/70 border border-gray-300">
+                    <label class="block text-xs font-semibold text-gray-600 mb-1">log pass *</label>
+                    <input type="password" id="ownerPassInput" autocomplete="new-password" placeholder="pass" class="w-full px-4 py-2.5 rounded-2xl focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-white/70 border border-gray-300">
                 </div>
                 <button onclick="handleOwnerLoginFinal()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 rounded-2xl font-medium transition shadow-md">
-                    ওনার লগইন করুন
+                    Owner log
                 </button>
             </div>
         </div>
@@ -345,37 +345,37 @@
     <div id="checkoutModal" class="fixed inset-0 bg-black/60 backdrop-blur-md hidden z-50 flex items-center justify-center p-4">
         <div class="ios-card rounded-3xl max-w-lg w-full p-6 relative shadow-2xl max-h-[90vh] overflow-y-auto">
             <button onclick="closeCheckoutModal()" class="absolute right-4 top-4 text-gray-400 hover:text-gray-600"><i class="fa-solid fa-xmark text-xl"></i></button>
-            <h3 class="text-xl font-bold text-gray-900 mb-4 border-b pb-2">অর্ডার সম্পন্ন করুন</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-4 border-b pb-2">Order confirm</h3>
             
             <div id="checkoutProductSummary" class="bg-emerald-50/80 p-3 rounded-2xl mb-4 text-sm text-emerald-900 font-medium border border-emerald-200"></div>
 
             <div class="space-y-4">
                 <div>
-                    <label class="block text-xs font-semibold text-gray-600 mb-1">আপনার নাম *</label>
+                    <label class="block text-xs font-semibold text-gray-600 mb-1">Your name *</label>
                     <input type="text" id="orderName" placeholder="যেমন: মোঃ সাকিফ হোসেন" class="w-full px-4 py-2 rounded-2xl text-sm border border-gray-300 focus:ring-2 focus:ring-emerald-500 bg-white/70">
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-xs font-semibold text-gray-600 mb-1">মোবাইল নম্বর *</label>
+                        <label class="block text-xs font-semibold text-gray-600 mb-1">Mobile Number *</label>
                         <input type="text" id="orderPhone" placeholder="যেমন: 01700000000" class="w-full px-4 py-2 rounded-2xl text-sm border border-gray-300 focus:ring-2 focus:ring-emerald-500 bg-white/70">
                     </div>
                     <div>
-                        <label class="block text-xs font-semibold text-gray-600 mb-1">WhatsApp নম্বর *</label>
+                        <label class="block text-xs font-semibold text-gray-600 mb-1">WhatsApp Number *</label>
                         <input type="text" id="orderWhatsapp" placeholder="যেমন: 01700000000" class="w-full px-4 py-2 rounded-2xl text-sm border border-gray-300 focus:ring-2 focus:ring-emerald-500 bg-white/70">
                     </div>
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-gray-600 mb-1">সম্পূর্ণ ঠিকানা (জেলা/থানা সহ) *</label>
-                    <textarea id="orderAddress" rows="2" placeholder="যেমন: হাউস ১০, রোড ৫, ধানমন্ডি, ঢাকা" class="w-full px-4 py-2 rounded-2xl text-sm border border-gray-300 focus:ring-2 focus:ring-emerald-500 bg-white/70"></textarea>
+                    <label class="block text-xs font-semibold text-gray-600 mb-1">your full location *</label>
+                    <textarea id="orderAddress" rows="2" placeholder="home,area,city,district, class="w-full px-4 py-2 rounded-2xl text-sm border border-gray-300 focus:ring-2 focus:ring-emerald-500 bg-white/70"></textarea>
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-gray-600 mb-1">পেমেন্ট মেথড</label>
+                    <label class="block text-xs font-semibold text-gray-600 mb-1">Payment Type</label>
                     <select class="w-full px-4 py-2 rounded-2xl text-sm bg-gray-100 font-medium text-gray-700 border" disabled>
-                        <option>Cash on Delivery (ক্যাশ অন ডেলিভারি)</option>
+                        <option>Cash on Delivery (Cash on delivary)</option>
                     </select>
                 </div>
                 <button onclick="submitOrder()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 rounded-2xl font-bold transition shadow-md">
-                    অর্ডার নিশ্চিত করুন (Confirm Order)
+                     (Confirm Order)
                 </button>
             </div>
         </div>
@@ -394,7 +394,7 @@
                         </div>
                         <div>
                             <h3 class="text-white font-bold text-sm leading-tight">ADMIN PANEL</h3>
-                            <p class="text-[11px] text-emerald-400 font-mono">SR STORE iOS UI</p>
+                            <p class="text-[11px] text-emerald-400 font-mono"> CHRACKBOX BD iOS UI</p>
                         </div>
                     </div>
 
@@ -402,7 +402,7 @@
                         <button onclick="switchTab('overview')" id="tabBtn-overview" class="w-full flex items-center space-x-3 px-4 py-3 rounded-2xl text-xs font-semibold text-emerald-400 bg-white/10 transition border border-white/10"><i class="fa-solid fa-chart-pie text-base w-5"></i><span>ওভারভিউ ও অ্যানালিটিক্স</span></button>
                         <button onclick="switchTab('products')" id="tabBtn-products" class="w-full flex items-center space-x-3 px-4 py-3 rounded-2xl text-xs font-semibold text-gray-400 hover:bg-white/5 hover:text-white transition"><i class="fa-solid fa-box text-base w-5"></i><span>প্রোডাক্ট ম্যানেজমেন্ট</span></button>
                         <button onclick="switchTab('orders')" id="tabBtn-orders" class="w-full flex items-center justify-between px-4 py-3 rounded-2xl text-xs font-semibold text-gray-400 hover:bg-white/5 hover:text-white transition">
-                            <span class="flex items-center space-x-3"><i class="fa-solid fa-cart-shopping text-base w-5"></i><span>অর্ডার লিস্ট</span></span>
+                            <span class="flex items-center space-x-3"><i class="fa-solid fa-cart-shopping text-base w-5"></i><span>Order List </span></span>
                             <span id="orderBadgeNav" class="bg-emerald-600 text-white text-[10px] px-2 py-0.5 rounded-full font-bold">0</span>
                         </button>
                         <button onclick="switchTab('settings')" id="tabBtn-settings" class="w-full flex items-center space-x-3 px-4 py-3 rounded-2xl text-xs font-semibold text-gray-400 hover:bg-white/5 hover:text-white transition"><i class="fa-solid fa-sliders text-base w-5"></i><span>স্টোর ও সিকিউরিটি সেটিংস</span></button>
@@ -415,7 +415,7 @@
                         <strong class="text-gray-200">sakhawat2758@gmail.com</strong>
                     </div>
                     <button onclick="closeOwnerDashboard()" class="w-full bg-red-500/20 hover:bg-red-500 text-red-300 hover:text-white py-2.5 rounded-2xl text-xs font-semibold transition flex items-center justify-center space-x-2 border border-red-500/30">
-                        <i class="fa-solid fa-right-from-bracket"></i><span>ড্যাশবোর্ড বন্ধ করুন</span>
+                        <i class="fa-solid fa-right-from-bracket"></i><span>Ownwe Logout </span>
                     </button>
                 </div>
             </aside>
@@ -425,7 +425,7 @@
                 <header class="bg-gray-900/40 border-b border-white/10 px-6 py-4 flex justify-between items-center flex-shrink-0">
                     <div>
                         <h2 id="dashboardTitle" class="text-lg font-bold text-white">বিজনেস অ্যানালিটিক্স ও ওভারভিউ</h2>
-                        <p class="text-xs text-gray-400">আপনার শপের পারফরম্যান্স ও লাইভ তথ্য বিশ্লেষণ</p>
+                        <p class="text-xs text-gray-400">Live Performence </p>
                     </div>
                     <div class="flex items-center space-x-3">
                         <span class="bg-emerald-500/10 text-emerald-400 text-xs px-3 py-1.5 rounded-full font-semibold border border-emerald-500/30 flex items-center"><i class="fa-solid fa-circle text-[8px] text-emerald-400 mr-2 animate-pulse"></i> সিস্টেম অনলাইন</span>
@@ -439,8 +439,8 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                             <div class="bg-white/5 p-5 rounded-3xl border border-white/10 backdrop-blur-md flex justify-between items-center">
                                 <div>
-                                    <p class="text-xs text-gray-400 font-semibold mb-1">মোট বিক্রি (Total Sales)</p>
-                                    <h3 class="text-2xl font-bold text-white" id="statTotalRevenue">৳ ০</h3>
+                                    <p class="text-xs text-gray-400 font-semibold mb-1">Total Sale (Total Sales)</p>
+                                    <h3 class="text-2xl font-bold text-white" id="statTotalRevenue">TAKA ০</h3>
                                 </div>
                                 <div class="w-12 h-12 bg-emerald-500/20 rounded-2xl flex items-center justify-center text-emerald-400 text-xl font-bold border border-emerald-500/30">
                                     <i class="fa-solid fa-bangladeshi-taka-sign"></i>
@@ -448,7 +448,7 @@
                             </div>
                             <div class="bg-white/5 p-5 rounded-3xl border border-white/10 backdrop-blur-md flex justify-between items-center">
                                 <div>
-                                    <p class="text-xs text-gray-400 font-semibold mb-1">মোট অর্ডার (Orders)</p>
+                                    <p class="text-xs text-gray-400 font-semibold mb-1">Total order (Orders)</p>
                                     <h3 class="text-2xl font-bold text-white" id="statTotalOrders">০</h3>
                                 </div>
                                 <div class="w-12 h-12 bg-blue-500/20 rounded-2xl flex items-center justify-center text-blue-400 text-xl font-bold border border-blue-500/30">
@@ -457,7 +457,7 @@
                             </div>
                             <div class="bg-white/5 p-5 rounded-3xl border border-white/10 backdrop-blur-md flex justify-between items-center">
                                 <div>
-                                    <p class="text-xs text-gray-400 font-semibold mb-1">মোট প্রোডাক্ট (Products)</p>
+                                    <p class="text-xs text-gray-400 font-semibold mb-1">Total product (Products)</p>
                                     <h3 class="text-2xl font-bold text-white" id="statTotalProducts">০</h3>
                                 </div>
                                 <div class="w-12 h-12 bg-purple-500/20 rounded-2xl flex items-center justify-center text-purple-400 text-xl font-bold border border-purple-500/30">
@@ -466,7 +466,7 @@
                             </div>
                             <div class="bg-white/5 p-5 rounded-3xl border border-white/10 backdrop-blur-md flex justify-between items-center">
                                 <div>
-                                    <p class="text-xs text-gray-400 font-semibold mb-1">কাস্টমার অ্যাকাউন্ট</p>
+                                    <p class="text-xs text-gray-400 font-semibold mb-1">Customer Account</p>
                                     <h3 class="text-2xl font-bold text-white" id="statTotalCustomers">০</h3>
                                 </div>
                                 <div class="w-12 h-12 bg-amber-500/20 rounded-2xl flex items-center justify-center text-amber-400 text-xl font-bold border border-amber-500/30">
@@ -478,17 +478,17 @@
                         <div class="bg-white/5 rounded-3xl border border-white/10 overflow-hidden backdrop-blur-md">
                             <div class="p-4 bg-white/5 font-bold text-sm text-gray-200 border-b border-white/10 flex justify-between items-center">
                                 <span>সাম্প্রতিক বিক্রি ও অর্ডারসমূহ</span>
-                                <button onclick="switchTab('orders')" class="text-xs text-emerald-400 hover:underline">সব অর্ডার দেখুন →</button>
+                                <button onclick="switchTab('orders')" class="text-xs text-emerald-400 hover:underline">See All Order →</button>
                             </div>
                             <div class="overflow-x-auto">
                                 <table class="w-full text-left text-sm">
                                     <thead class="bg-white/5 text-gray-400 border-b border-white/10 text-xs uppercase">
                                         <tr>
-                                            <th class="p-3">তারিখ</th>
-                                            <th class="p-3">কাস্টমার ও ID</th>
-                                            <th class="p-3">প্রোডাক্ট</th>
-                                            <th class="p-3">মূল্য</th>
-                                            <th class="p-3 text-right">স্টেটাস</th>
+                                            <th class="p-3">Date</th>
+                                            <th class="p-3">Customer ও ID</th>
+                                            <th class="p-3">Product</th>
+                                            <th class="p-3">Price</th>
+                                            <th class="p-3 text-right">Status</th>
                                         </tr>
                                     </thead>
                                     <tbody id="overviewRecentOrdersBody" class="divide-y divide-white/5"></tbody>
@@ -500,27 +500,27 @@
                     <!-- TAB 1: PRODUCT MANAGEMENT -->
                     <div id="tabContent-products" class="space-y-6 hidden">
                         <div class="bg-white/5 p-6 rounded-3xl border border-white/10 backdrop-blur-md">
-                            <h4 class="font-bold text-white mb-4 text-base" id="productFormTitle">নতুন প্রোডাক্ট যোগ করুন</h4>
+                            <h4 class="font-bold text-white mb-4 text-base" id="productFormTitle">Add New Product</h4>
                             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                                 <input type="hidden" id="editProductId">
                                 <div>
-                                    <label class="block text-xs font-semibold text-gray-400 mb-1">প্রোডাক্টের নাম *</label>
+                                    <label class="block text-xs font-semibold text-gray-400 mb-1">Product Name*</label>
                                     <input type="text" id="pName" placeholder="প্রোডাক্টের নাম" class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-2xl text-sm text-white focus:outline-none">
                                 </div>
                                 <div>
-                                    <label class="block text-xs font-semibold text-gray-400 mb-1">মূল্য (৳) *</label>
+                                    <label class="block text-xs font-semibold text-gray-400 mb-1">price (৳) *</label>
                                     <input type="number" id="pPrice" placeholder="যেমন: ১৫০০" class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-2xl text-sm text-white focus:outline-none">
                                 </div>
                                 <div>
-                                    <label class="block text-xs font-semibold text-gray-400 mb-1">ডিসকাউন্ট % (ঐচ্ছিক)</label>
+                                    <label class="block text-xs font-semibold text-gray-400 mb-1">Disccount % (ঐচ্ছিক)</label>
                                     <input type="number" id="pDiscount" placeholder="যেমন: ১০" class="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-2xl text-sm text-white focus:outline-none">
                                 </div>
                                 <div>
-                                    <label class="block text-xs font-semibold text-gray-400 mb-1">ক্যাটাগরি সিলেক্ট করুন (অটো কোড)</label>
+                                    <label class="block text-xs font-semibold text-gray-400 mb-1">Select Catagori (Auto Code)</label>
                                     <select id="pCategory" class="w-full px-3 py-2 bg-gray-800 border border-white/20 rounded-2xl text-sm text-white"></select>
                                 </div>
                                 <div>
-                                    <label class="block text-xs font-semibold text-gray-400 mb-1">স্টক অবস্থান</label>
+                                    <label class="block text-xs font-semibold text-gray-400 mb-1">stock analysis </label>
                                     <select id="pStock" class="w-full px-3 py-2 bg-gray-800 border border-white/20 rounded-2xl text-sm text-white">
                                         <option value="instock">In Stock (স্টক আছে)</option>
                                         <option value="outstock">Out of Stock (স্টক শেষ)</option>
